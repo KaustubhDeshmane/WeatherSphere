@@ -51,22 +51,6 @@ https://kaustubhdeshmane.github.io/WeatherSphere/
 
 ---
 
-## 📸 Screenshots
-
-### Sunny
-
-![Home](assets/screenshots/sunny.png)
-
-### Forecast
-
-![Forecast](assets/screenshots/forecast.png)
-
-### Rainy
-
-![Rainy](assets/screenshots/rainy.png)
-
----
-
 ## 📂 Project Structure
 
 ```text
