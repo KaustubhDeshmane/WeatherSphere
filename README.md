@@ -8,11 +8,7 @@ WeatherSphere is a modern weather application that provides real-time weather in
 
 ## 🚀 Live Demo
 
-Add your GitHub Pages link here:
-
-```text
-https://YOUR_USERNAME.github.io/WeatherSphere/
-```
+https://kaustubhdeshmane.github.io/WeatherSphere/
 
 ---
 
