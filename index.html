@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSphere | Real-Time Weather Intelligence</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+
+    <div class="overlay"></div>
+
+    <div class="container">
+
+        <div class="logo-section">
+            <div class="logo">🌦️</div>
+            <h1>WeatherSphere</h1>
+            <p>Real-Time Weather Intelligence</p>
+        </div>
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Search city..."
+                autocomplete="off"
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+            <button id="locationBtn">
+             📍 My Location
+            </button>
+
+        </div>
+
+        <div id="suggestions" class="suggestions"></div>
+
+        <div id="recentSearches" class="recent-searches"></div>
+
+        <div id="loader" class="loader hidden">
+            <div class="spinner"></div>
+            <p>Fetching weather data...</p>
+        </div>
+
+        <div id="weatherCard" class="weather-card hidden">
+
+            <div class="weather-header">
+
+                <div>
+                    <h2 id="cityName">Mumbai</h2>
+                    <p id="weatherDescription">Clear Sky</p>
+                </div>
+
+                <img
+                    id="weatherIcon"
+                    src=""
+                    alt="weather icon"
+                >
+
+            </div>
+
+            <div class="temperature-section">
+
+                <h1 id="temperature">
+                    29°C
+                </h1>
+
+                <p id="feelsLike">
+                    Feels Like 31°C
+                </p>
+
+            </div>
+
+            <div class="weather-grid">
+
+                <div class="weather-box">
+                    <span>💧</span>
+                    <h4>Humidity</h4>
+                    <p id="humidity">80%</p>
+                </div>
+
+                <div class="weather-box">
+                    <span>🌬️</span>
+                    <h4>Wind</h4>
+                    <p id="wind">3 m/s</p>
+                </div>
+
+                <div class="weather-box">
+                    <span>📈</span>
+                    <h4>Pressure</h4>
+                    <p id="pressure">1000 hPa</p>
+                </div>
+
+                <div class="weather-box">
+                    <span>👁️</span>
+                    <h4>Visibility</h4>
+                    <p id="visibility">10 km</p>
+                </div>
+
+            </div>
+
+            <div class="sun-container">
+
+                <div class="sun-box">
+                    🌅 Sunrise
+                    <p id="sunrise">06:00 AM</p>
+                </div>
+
+                <div class="sun-box">
+                    🌇 Sunset
+                    <p id="sunset">06:45 PM</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="forecastSection" class="forecast-section hidden">
+
+            <h2>
+                5 Day Forecast
+            </h2>
+
+            <div id="forecastCards" class="forecast-cards"></div>
+
+        </div>
+
+        <div id="errorBox" class="error-box hidden"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
